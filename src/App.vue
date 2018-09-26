@@ -7,12 +7,28 @@
       <li><router-link to="/news">news</router-link></li>
       <li><router-link to="/404">404</router-link></li>
     </ul>
+
   </div>
 </template>
 
 <script>
 export default {
-  name: 'App'
+  name: 'app',
+  data () {
+    return {
+      msg: 'hello',
+      captcha_image_content:'',
+      captcha_key:''
+    }
+  },
+  methods:{
+  	 key(){
+  	   let _this = this;
+  	 }
+  },
+  mounted(){
+    
+  }
 }
 </script>
 

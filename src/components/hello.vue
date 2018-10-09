@@ -27,6 +27,7 @@ export default {
           .then(function (res) {
              console.log(res)
              _this.captcha_image_content = res.data.captcha_image_content
+             //_this.key()
           })
           .catch(function (err) {
               console.log(err)
@@ -34,7 +35,8 @@ export default {
   	 }
   },
   mounted(){
-  	this.key();
+  	
+    this.key();
   }
 }
 </script>
